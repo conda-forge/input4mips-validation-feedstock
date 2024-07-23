@@ -9,7 +9,7 @@ source:
     sha256: ef352516ecda9ed708f5be2a4bd7446f2e819230874ac1f6b91c597c5d4d56de
 
 build:
-  number: 0
+  number: 1
 requirements:
   host:
     - python >=3.9
@@ -72,7 +72,7 @@ outputs:
     version: {{ version }}
     build:
       skip: true  # [py != 39]
-
+      noarch: python
     requirements:
       host:
         - python
