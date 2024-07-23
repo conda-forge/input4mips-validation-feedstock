@@ -27,7 +27,7 @@ outputs:
       host:
         - python >=3.9
         - pip
-        - pdm
+        - pdm-backend
 
       run:
         - python >=3.9
@@ -77,7 +77,7 @@ outputs:
       host:
         - python
         - pip
-        - pdm
+        - pdm-backend
 
       run:
         - python
