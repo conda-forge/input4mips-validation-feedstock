@@ -12,7 +12,7 @@ build:
   number: 0
 requirements:
   host:
-    - python
+    - python >=3.9
 
 outputs:
   - name: {{ name|lower }}
@@ -25,9 +25,9 @@ outputs:
 
     requirements:
       host:
-        - python >=3.9.0
+        - python >=3.9
       run:
-        - python >=3.9.0
+        - python >=3.9
         - iris >=3.0
         - netcdf4
         - numpy
