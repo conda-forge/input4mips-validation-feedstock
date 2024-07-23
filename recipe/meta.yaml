@@ -72,7 +72,7 @@ outputs:
     version: {{ version }}
     build:
       skip: true  # [py != 39]
-
+      noarch: python
     requirements:
       host:
         - python
