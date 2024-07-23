@@ -26,6 +26,8 @@ outputs:
     requirements:
       host:
         - python >=3.9
+        - pip
+
       run:
         - python >=3.9
         - iris >=3.0
@@ -69,9 +71,11 @@ outputs:
     version: {{ version }}
     build:
       skip: true  # [py != 39]
+
     requirements:
       host:
         - python
+        - pip
 
       run:
         - python
