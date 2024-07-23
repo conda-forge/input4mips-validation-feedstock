@@ -12,7 +12,6 @@ source:
 # https://github.com/conda-forge/matplotlib-feedstock/blob/main/recipe/meta.yaml
 build:
   number: 2
-  noarch: python
 
 requirements:
   host:
@@ -64,6 +63,9 @@ outputs:
   # (e.g. dependency updates with breaking changes)
   # for those who just want the CLI.
   - name: input4mips-validation-locked
+    build:
+      noarch: python
+
     requirements:
       host:
         - python
