@@ -30,7 +30,7 @@ outputs:
         - python >=3.9
         - iris >=3.0
         - netcdf4
-        - numpy
+        - numpy >=1.24
         - cfchecker
         - attrs
         - cattrs
