@@ -1,18 +1,18 @@
 {% set name = "input4mips-validation" %}
-{% set version = "0.6.0" %}
+{% set version = "0.8.1" %}
 
 package:
   name: {{ name|lower }}-meta
 
 source:
   - url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/input4mips_validation-{{ version }}.tar.gz
-    sha256: a9acc322b6fd78ccb72f845d79dc2e0c885f4620c096cf6622e3ec99b9ffb5e3
+    sha256: ef352516ecda9ed708f5be2a4bd7446f2e819230874ac1f6b91c597c5d4d56de
 
 build:
   number: 0
 requirements:
   host:
-    - python
+    - python >=3.9
 
 outputs:
   - name: {{ name|lower }}
@@ -25,26 +25,28 @@ outputs:
 
     requirements:
       host:
-        - python >=3.9.0
-        - poetry-core
+        - python >=3.9
+        - pip
+        - pdm-backend
+
       run:
-        - python >=3.9.0
-        - loguru >=0.7
-        - cf_xarray >=0.8
-        - xarray >=2022.0
-        - pint-xarray >=0.3
-        - numpy >=1.23, <2.0
-        - cftime >=1.6
-        - typing-extensions >=4.0
-        - pooch >=1.0
-        - netcdf4 >=1.0
-        - attrs >=22.0
-        - typer >=0.9.0
-        - validators >=0.28.3
-        - cattrs >=23.2.3
-      run_constrained:
-        - matplotlib-base >=3.0
-        - notebook >=6.0
+        - python >=3.9
+        - iris >=3.0
+        - netcdf4
+        - numpy >=1.24, <2.0
+        - cfchecker
+        - attrs
+        - cattrs
+        - cf_xarray
+        - loguru
+        - ncdata
+        - pandas
+        - pint
+        - pint-xarray
+        - pooch
+        - typer
+        - validators
+        - xarray
 
     test:
       imports:
@@ -70,10 +72,12 @@ outputs:
     version: {{ version }}
     build:
       skip: true  # [py != 39]
+
     requirements:
       host:
         - python
-        - poetry-core
+        - pip
+        - pdm-backend
 
       run:
         - python
