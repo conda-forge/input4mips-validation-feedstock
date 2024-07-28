@@ -1,4 +1,4 @@
-{% set version = "0.9.0" %}
+{% set version = "0.10.1" %}
 
 package:
   name: input4mips-validation-suite
@@ -56,6 +56,10 @@ outputs:
       commands:
         - pip check
         - input4mips-validation --help
+        - input4mips-validation create-db --help
+        - input4mips-validation upload-ftp --help
+        - input4mips-validation validate-file --help
+        - input4mips-validation validate-tree --help
       requires:
         - pip
       
@@ -95,6 +99,10 @@ outputs:
       commands:
         - pip check
         - input4mips-validation --help
+        - input4mips-validation create-db --help
+        - input4mips-validation upload-ftp --help
+        - input4mips-validation validate-file --help
+        - input4mips-validation validate-tree --help
       requires:
         - pip
         
