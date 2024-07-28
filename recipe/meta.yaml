@@ -80,7 +80,7 @@ outputs:
 
       run:
         - python
-        - {{ pin_subpackage('input4mips-validation', exact=True) }}}
+        - {{ pin_subpackage('input4mips-validation', exact=True) }}
         - {{ pin_compatible('iris', min_pin='3.8.1', max_pin='3.8.2') }}
         - {{ pin_compatible('netcdf4', min_pin='1.7.1', max_pin='1.7.2') }}
         - {{ pin_compatible('numpy', min_pin='1.26.4', max_pin='1.26.5') }}
