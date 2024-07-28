@@ -41,7 +41,7 @@ outputs:
         - cattrs
         - cf_xarray
         - loguru
-        # - loguru  # waiting on https://github.com/conda-forge/staged-recipes/pull/27110
+        # - loguru-config  # waiting on https://github.com/conda-forge/staged-recipes/pull/27110
         - ncdata
         - pandas
         - pint
@@ -92,12 +92,14 @@ outputs:
         # - {{ pin_compatible('loguru-config', min_pin='0.1.0', max_pin='0.1.1') }}  # waiting on https://github.com/conda-forge/staged-recipes/pull/27110
         - {{ pin_compatible('ncdata', min_pin='0.1.1', max_pin='0.1.2') }}
         - {{ pin_compatible('pandas', min_pin='2.2.2', max_pin='2.2.3') }}
-        - {{ pin_compatible('pint_xarray', min_pin='0.4', max_pin='0.4.1') }}
+        - {{ pin_compatible('pint', min_pin='0.24.3', max_pin='0.24.4') }}
+        - {{ pin_compatible('pint-xarray', min_pin='0.4', max_pin='0.4.1') }}
         - {{ pin_compatible('pooch', min_pin='1.8.2', max_pin='1.8.3') }}
         - {{ pin_compatible('tqdm', min_pin='4.66.4', max_pin='4.66.5') }}
         - {{ pin_compatible('typer', min_pin='0.12.3', max_pin='0.12.4') }}
         - {{ pin_compatible('validators', min_pin='0.33.0', max_pin='0.33.1') }}
         - {{ pin_compatible('xarray', min_pin='2024.6.0', max_pin='2024.6.1') }}
+
     test:
       imports:
         - input4mips_validation
