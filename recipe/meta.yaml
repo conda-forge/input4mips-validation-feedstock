@@ -57,7 +57,9 @@ outputs:
       commands:
         - pip check
         - input4mips-validation --help
-        - input4mips-validation create-db --help
+        - input4mips-validation db add-tree --help
+        - input4mips-validation db create --help
+        - input4mips-validation db validate --help
         - input4mips-validation upload-ftp --help
         - input4mips-validation validate-file --help
         - input4mips-validation validate-tree --help
@@ -104,7 +106,9 @@ outputs:
       commands:
         - pip check
         - input4mips-validation --help
-        - input4mips-validation create-db --help
+        - input4mips-validation db add-tree --help
+        - input4mips-validation db create --help
+        - input4mips-validation db validate --help
         - input4mips-validation upload-ftp --help
         - input4mips-validation validate-file --help
         - input4mips-validation validate-tree --help
