@@ -11,7 +11,7 @@ source:
 # Learning from matplotlib for the skips etc. here
 # https://github.com/conda-forge/matplotlib-feedstock/blob/main/recipe/meta.yaml
 build:
-  number: 0
+  number: 1
 
 requirements:
   host:
@@ -37,6 +37,7 @@ outputs:
         - netcdf4
         - numpy >=1.24, <2.0
         - cfchecker
+        - cftime
         - attrs
         - cattrs
         - cf_xarray
@@ -48,8 +49,10 @@ outputs:
         - pooch
         - tqdm
         - typer
+        - typing_extensions
         - validators
         - xarray
+
 
     test:
       imports:
@@ -86,6 +89,7 @@ outputs:
         - {{ pin_compatible('netcdf4', min_pin='1.7.1', max_pin='1.7.2') }}
         - {{ pin_compatible('numpy', min_pin='1.26.4', max_pin='1.26.5') }}
         - {{ pin_compatible('cfchecker', min_pin='4.1.0', max_pin='4.1.1') }}
+        - {{ pin_compatible('cftime', min_pin='1.6.4', max_pin='1.6.5') }}
         - {{ pin_compatible('attrs', min_pin='23.2.0', max_pin='23.2.1') }}
         - {{ pin_compatible('cattrs', min_pin='23.2.3', max_pin='23.2.4') }}
         - {{ pin_compatible('cf_xarray', min_pin='0.9.4', max_pin='0.9.5') }}
@@ -97,6 +101,7 @@ outputs:
         - {{ pin_compatible('pooch', min_pin='1.8.2', max_pin='1.8.3') }}
         - {{ pin_compatible('tqdm', min_pin='4.66.4', max_pin='4.66.5') }}
         - {{ pin_compatible('typer', min_pin='0.12.3', max_pin='0.12.4') }}
+        - {{ pin_compatible('typing_extensions', min_pin='4.12.2', max_pin='4.12.3') }}
         - {{ pin_compatible('validators', min_pin='0.33.0', max_pin='0.33.1') }}
         - {{ pin_compatible('xarray', min_pin='2024.6.0', max_pin='2024.6.1') }}
 
