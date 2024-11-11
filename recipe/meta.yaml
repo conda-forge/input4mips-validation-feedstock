@@ -1,4 +1,4 @@
-{% set version = "0.14.0" %}
+{% set version = "0.15.0" %}
 
 package:
   name: input4mips-validation-suite
@@ -6,7 +6,7 @@ package:
 
 source:
   - url: https://pypi.org/packages/source/i/input4mips-validation/input4mips_validation-{{ version }}.tar.gz
-    sha256: 32271582dbc1d8bf844c290a41d645daad59070fae245e07394c70373d2c4ae2
+    sha256: bc0179de40d204615682b8f76a223932dcbe618ccfaa65e4661cefd4f7020d17
 
 # Learning from matplotlib for the skips etc. here
 # https://github.com/conda-forge/matplotlib-feedstock/blob/main/recipe/meta.yaml
