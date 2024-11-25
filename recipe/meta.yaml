@@ -11,7 +11,7 @@ source:
 # Learning from matplotlib for the skips etc. here
 # https://github.com/conda-forge/matplotlib-feedstock/blob/main/recipe/meta.yaml
 build:
-  number: 0
+  number: 1
 
 requirements:
   host:
