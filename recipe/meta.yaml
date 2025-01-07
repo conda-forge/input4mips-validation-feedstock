@@ -11,7 +11,7 @@ source:
 # Learning from matplotlib for the skips etc. here
 # https://github.com/conda-forge/matplotlib-feedstock/blob/main/recipe/meta.yaml
 build:
-  number: 0
+  number: 1
 
 requirements:
   host:
@@ -27,12 +27,12 @@ outputs:
 
     requirements:
       host:
-        - python >=3.9
+        - python {{ python_min }}
         - pip
         - pdm-backend
 
       run:
-        - python >=3.9
+        - python >={{ python_min }}
         - iris >=3.0
         - netcdf4
         - numpy >=1.24, <2.0
@@ -77,12 +77,12 @@ outputs:
 
     requirements:
       host:
-        - python
+        - python {{ python_min }}
         - pip
         - pdm-backend
 
       run:
-        - python
+        - python >={{ python_min }}
         - {{ pin_subpackage('input4mips-validation', exact=True) }}
         - {{ pin_compatible('iris', lower_bound='3.8.1', upper_bound='3.8.2') }}
         - {{ pin_compatible('netcdf4', lower_bound='1.7.1', upper_bound='1.7.2') }}
@@ -118,6 +118,7 @@ outputs:
         - input4mips-validation validate-tree --help
       requires:
         - pip
+        - python {{ python_min }}
 
 about:
   home: https://input4mips-validation.readthedocs.io
