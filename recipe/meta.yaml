@@ -35,7 +35,7 @@ outputs:
         - python >={{ python_min }}
         - iris >=3.0
         - netcdf4
-        - numpy >=1.24, <2.0
+        - numpy >=1.24,<2.0
         - cfchecker
         - cftime
         - attrs
@@ -67,6 +67,7 @@ outputs:
         - input4mips-validation validate-tree --help
       requires:
         - pip
+        - python >={{ python_min }}
 
   # A locked version, which will help avoid installation headaches
   # (e.g. dependency updates with breaking changes)
