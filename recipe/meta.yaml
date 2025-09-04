@@ -67,7 +67,7 @@ outputs:
         - input4mips-validation validate-tree --help
       requires:
         - pip
-        - python >={{ python_min }}
+        - python {{ python_min }}
 
   # A locked version, which will help avoid installation headaches
   # (e.g. dependency updates with breaking changes)
