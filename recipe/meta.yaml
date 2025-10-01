@@ -1,4 +1,4 @@
-{% set version = "0.20.0" %}
+{% set version = "0.20.1" %}
 
 package:
   name: input4mips-validation-suite
@@ -6,7 +6,7 @@ package:
 
 source:
   - url: https://pypi.org/packages/source/i/input4mips-validation/input4mips_validation-{{ version }}.tar.gz
-    sha256: f0a5ee4c2094aefccc29a22288f3aadcd38d02db7c5ee4464e5e76a2380b9d59
+    sha256: 9869025f988d40097e81128855d97ad75639d4ef1a903842320858b9eebcdb5b
 
 # Learning from matplotlib for the skips etc. here
 # https://github.com/conda-forge/matplotlib-feedstock/blob/main/recipe/meta.yaml
@@ -90,10 +90,10 @@ outputs:
         - {{ pin_compatible('numpy', lower_bound='1.26.4', upper_bound='1.26.5') }}
         - {{ pin_compatible('cfchecker', lower_bound='4.1.0', upper_bound='4.1.1') }}
         - {{ pin_compatible('cftime', lower_bound='1.6.4', upper_bound='1.6.5') }}
-        - {{ pin_compatible('click', lower_bound='8.1.8', upper_bound='8.1.9') }}
         - {{ pin_compatible('attrs', lower_bound='24.3.0', upper_bound='24.3.1') }}
         - {{ pin_compatible('cattrs', lower_bound='24.1.2', upper_bound='24.1.3') }}
         - {{ pin_compatible('cf_xarray', lower_bound='0.9.4', upper_bound='0.9.5') }}
+        - {{ pin_compatible('click', lower_bound='8.1.8', upper_bound='8.1.9') }}
         - {{ pin_compatible('loguru', lower_bound='0.7.3', upper_bound='0.7.4') }}
         - {{ pin_compatible('ncdata', lower_bound='0.1.1', upper_bound='0.1.2') }}
         - {{ pin_compatible('pandas', lower_bound='2.2.3', upper_bound='2.2.4') }}
