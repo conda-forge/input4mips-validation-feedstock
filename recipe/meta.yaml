@@ -5,13 +5,13 @@ package:
   version: {{ version }}
 
 source:
-  - url: https://pypi.org/packages/source/i/input4mips-validation/input4mips_validation-{{ version }}.tar.gz
+  - url: https://files.pythonhosted.org/packages/source/i/input4mips-validation/input4mips_validation-{{ version }}.tar.gz
     sha256: 9869025f988d40097e81128855d97ad75639d4ef1a903842320858b9eebcdb5b
 
 # Learning from matplotlib for the skips etc. here
 # https://github.com/conda-forge/matplotlib-feedstock/blob/main/recipe/meta.yaml
 build:
-  number: 1
+  number: 2
 
 requirements:
   host:
